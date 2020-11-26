@@ -1,10 +1,10 @@
 class plinkos{
  
-    constructer(  ){
+    constructer( x,y,w,h ){
     var options = {
         isStatic: true
     }
-    this.body = bodies.rectangle();
+    this.body = Bodies.circle(x,y,w,h,options);
    
     world.add(world,this.body);
     }
@@ -12,7 +12,8 @@ class plinkos{
        var pos = this.body.position;
        rectMode(CENTER);
        fill("white")
-        
+          
+    
        }
        
    };
